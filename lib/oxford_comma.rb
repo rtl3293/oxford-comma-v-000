@@ -3,13 +3,13 @@ def oxford_comma(array)
     return array.join()
   elsif array.length == 2
     last_element = array[array.length-1]
-    last_element.prepend("and ")
+    last_element.prepend("and")
     return array.join()
   elsif array.length >= 3
     last_element = array[array.length-1]
-    last_element.prepend(" and ")
+    last_element.prepend("and ")
     array[array.length-1] = last_element
-    return array.join(',')
+    return array.join(', ')
   end
 end
 
