@@ -7,10 +7,10 @@ def oxford_comma(array)
     return array.join()
   elsif array.length >= 3
     last_element = array[array.length-1]
-    last_element.prepend("and ")
+    last_element.prepend(" and ")
     array[array.length-1] = last_element
     return array.join(', ')
   end
 end
 
-puts oxford_comma(['1','2',"3","4"])
+#puts oxford_comma(['1','2',"3","4"])
